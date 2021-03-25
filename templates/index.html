@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IPIS</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="menu">
+            <li><a href="/">IPIS</a></li>
+        </div>
+        <div id="zone">
+            <h2 class="it">IP information service</h2>
+            <form action="/veri" method="post">
+                <input type="text" name="ip" placeholder="IP (111.111.111.111)">
+                <input type="text" name="mask" placeholder="IP Bits (24)">
+                <button type="submit"><img src="https://i.hizliresim.com/ZKY0dP.png"></button>
+            </form>
+        <div class="faqzone">
+            <h2 class="faq">FAQ</h2>
+            <p>KeyError : The information you entered is incorrect or incomplete</p>
+            <p>AddrFormatError : If you pass the "BITS" field blank, you will get this response.</p>
+            <p>Where is the privacy policy : We do not take any of your information ...</p>
+        </div>
+        <form
+            action="https://formspree.io/f/xlearlgy"
+            method="POST"
+            class="mesaj"
+        >
+            <h2>Contact</h2>
+        <label>
+            Your email :
+            <input type="email" name="_replyto">
+        </label><br><br><br>
+        <label>
+            Your message :
+            <textarea name="message"></textarea>
+        </label><br><br><br>
+            <button class="dtb" type="submit"><img src="https://i.hizliresim.com/LvnQ7H.png"></button>
+        </form>
+        <p class="cp">IPIS © 2021</p>
+    </body>
+</html>

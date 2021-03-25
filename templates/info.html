@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IPIS</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">  
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design.css') }}">      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="menu">
+            <li><a href="/">IPIS</a></li>
+        </div>
+            <div class="ipzone">
+                <ul>
+                    <li>IP : {{ip}}</li>
+                    <li>City : {{city}}</li>
+                    <li>Region : {{region}}</li>
+                    <li>Country : {{country}}</li>
+                    <li>Org : {{org}}</li>
+                    <li>Postal : {{postal}}</li>
+                    <li>Time zone : {{timezone}}</li>
+                    <li>Mask : {{maske}}</li>
+                    <li>Bits : {{ipbits}}</li>
+                    <li>Network Bits : {{networkbits}}</li>
+                    <li>Netmask Bits : {{netmaskbits}}</li>
+                    <li>Broadcast Bits : {{broadcastbits}}</li>
+                    <li>Cidr : {{cidr}}</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

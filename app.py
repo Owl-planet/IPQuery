@@ -1,7 +1,6 @@
 from flask import Flask,render_template,request
 import requests
 from netaddr import IPNetwork
-from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 @app.route("/")

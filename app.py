@@ -4,8 +4,6 @@ from netaddr import IPNetwork
 from flask_pymongo import PyMongo
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/FlaskDeneme"
-mongo = PyMongo(app)
 @app.route("/")
 def index():
     return render_template("index.html")

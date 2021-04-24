@@ -1,0 +1,11 @@
+---
+application:
+  name: "ipquery"
+  project: "ipjquery"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-ipquery"
+  routes:
+  - application_name: "ipquery"
+    paths:
+    - "/*"
